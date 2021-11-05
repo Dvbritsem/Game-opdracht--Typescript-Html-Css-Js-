@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>B.O.B</title>
+</head>
+<body>
+    <audio src="../audio/2020-03-22_-_8_Bit_Surf_-_FesliyanStudios.com_-_David_Renda.mp3" autoplay controls>
+		Error: your web browser does not support this audio player.
+		</audio>
+    <game>
+            <score>Score: 0</score>
+            <battery>
+            <timerperc>100%</timerperc>
+            </battery>
+            <div class="gamemessagebox"><gamemessage></gamemessage></div>
+
+            <form id="form" class="hidden">
+                <h2>You did it!</h2>
+                <hr></hr>
+                <br></br>
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"/>
+                </div>
+                <br></br>
+                <div class="form-item">
+                    <h2 type="number" id="score" name="score"></h2>
+                </div>
+                <div class="form-item">
+                    <input type="submit" name="submit" value="Try again!"/>
+                </div>
+            </form>
+        </game>
+
+    <gameterminal1>
+        <backgroundterminal>
+        </backgroundterminal>
+        <messagebox><message></message></messagebox>
+    </gameterminal1>
+
+    <script src='../js/main.js'></script>
+</body>
+</html>

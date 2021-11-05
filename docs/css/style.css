@@ -1,0 +1,298 @@
+html, body {
+    /* font-family: (Eigen font); */
+    background-color: #3f3f3f;
+    overflow:hidden;
+    margin:0px; padding:0px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+audio {
+    display: none;
+}
+
+game * {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    margin:0px; padding:0px;
+}
+
+game {
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    
+    left:calc(50% - 712px);
+    top:calc(50% - 450px);
+    width:1440px; height:900px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    border:3px solid rgb(150, 150, 150);
+    box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+form {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size:26px;
+    margin-top: 150px;
+    width:100%;
+    vertical-align: middle;
+}
+
+form * {
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-top: 10px;
+}
+form input {
+width: 50%;
+left:25%;
+height: 50px;
+font-size:40px;
+}
+leaderboard * {
+    position: absolute;
+}
+
+div.leaderboard {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size:26px;
+    margin-top: 150px;
+}
+
+div.leaderboard * {
+    position: relative;
+}
+
+robot {
+    background-image: url(../img/robot.png);
+    width:150px; height: 230px;
+}
+
+.robot-duck{
+    background-image: url(../img/robot-duck.png);
+    width:150px; height: 230px;
+}
+
+enemy1 {
+    background-image: url(../img/enemy1.png);
+    width:160px; height: 160px;
+}
+
+enemy2 {
+    background-image: url(../img/enemy2.gif);
+    width:120px; height: 192px;
+    background-size: contain;
+}
+
+tree {
+    background-image: url(../img/treeglitched.gif);
+    width:320px; height: 320px;
+    z-index: -1;
+}
+
+.fixed {
+    background-image: url(../img/boom.png);
+}
+
+background {
+    background-image: url(../img/background.png);
+    width:14400px; height: 900px;
+    background-size: inherit;
+    background-repeat: repeat-x;
+    border-image-outset: 10px inherit black;
+    z-index: -2;
+}
+
+
+
+score {
+    color:white;
+    font-size:26px;
+    top:0; left:0;
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+timer {
+    color:white;
+    font-size:26px;
+    top:0; right:0;
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+timerperc {
+    color:white;
+    font-size:40px;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 140px;       /*The same as your div height*/
+    font-family: 'Press Start 2P';
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+
+code {
+    background-image: url(../img/code.gif);
+    width: 80px; height: 80px;
+}
+
+cloud1 {
+    background-image: url(../img/cloud1.png);
+    width: 200px; height: 120px;
+}
+
+cloud2 {
+    background-image: url(../img/cloud2.png);
+    width: 190px; height: 120px;
+}
+
+cloud3 {
+    background-image: url(../img/cloud3.png);
+    width: 220px; height: 130px;
+}
+
+battery {
+    top:0; right:0;
+    width: 290px; height: 140px;
+    transform: scale(0.5);
+}
+
+battery.green {
+    background-image: url(../img/battery_green.png);
+}
+
+battery.orange {
+    background-image: url(../img/battery_orange.png);
+}
+
+battery.yellow {
+    background-image: url(../img/battery_yellow.png);
+}
+
+battery.red {
+    background-image: url(../img/battery_red.png);
+}
+
+battery.shutter {
+    background-image: url(../img/battery_flicker.gif);
+}
+
+checkpoint {
+    background-image: url(../img/checkpoint.png);
+    width: 230px; height: 260px;
+}
+
+endpoint {
+    background-image: url(../img/endpoint.png);
+    width: 230px; height: 260px;
+}
+
+checkpoint.green {
+    background-image: url(../img/checkpoint_green.png);
+    width: 230px; height: 260px;
+}
+
+sign {
+    background-image: url(../img/sign.png);
+    width: 275px; height: 280px;
+}
+
+
+canvas {
+    width:1440px; height: 900px;
+    border: 3px inherit black;
+}
+
+
+
+
+terminalBackground {
+    background-image: url(../img/terminal1/console_terminal_backround.png);
+    width:1920px; height: 1080px;
+    background-size: inherit;
+    border-image-outset: 10px inherit black;
+    z-index: 10;
+}
+
+terminalBorder {
+    background-image: url(../img/terminal1/terminal_border.png);
+    width:1920px; height: 1080px;
+    background-size: inherit;
+    border-image-outset: 10px inherit black;
+    z-index: 19;
+}
+
+
+Terminal1Player {
+    background-image: url(../img/terminal1/terminal_enemy1_player.png);
+    width:257px; height:338px;
+    transform: scale(0.1);
+    z-index: 11;
+}
+
+Terminal1Block {
+    background-image: url(../img/terminal1/terminal1_block1.png);
+    width:650px; height:734px;
+    z-index: 11;
+}
+
+Terminal2Block {
+    background-image: url(../img/terminal1/terminal1_block1.png);
+    width:650px; height:734px;
+    z-index: 11;
+}
+
+.terminal-block-blink {
+    background-image: url(../img/terminal1/terminal1_block1_red.png);
+    width:650px; height:734px;
+    z-index: 11;
+}
+
+messagebox {
+    font-family: 'Press Start 2P', cursive;
+    z-index: 2;
+    z-index: 12;
+}
+
+message {
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    color: red;
+    font-size: 100px;
+    z-index: 12;
+}
+
+.gamemessagebox {
+    left: 35%; top: 35%;
+}
+
+gamemessage {
+    font-family: 'Press Start 2P', cursive;
+    color: red;
+    font-size: 100px;
+    text-align: center;
+    z-index: 12;
+    
+
+}
+
